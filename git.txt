@@ -1,0 +1,79 @@
+C:\Users\OJT>cd Tester
+
+C:\Users\OJT\Tester>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Code.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\OJT\Tester>git add README.md
+
+C:\Users\OJT\Tester>git commit -m "Comitted"
+[master f21ff9e] Comitted
+ 1 file changed, 1 insertion(+)
+
+C:\Users\OJT\Tester>git push -u origin master
+Username for 'https://github.com': kimolivo@yahoo.com
+Password for 'https://kimolivo@yahoo.com@github.com':
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 258 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/kimolivo/Tester.git
+   0b928b0..f21ff9e  master -> master
+Branch master set up to track remote branch master from origin.
+
+C:\Users\OJT\Tester>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Code.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\OJT\Tester>git add Code.txt
+
+C:\Users\OJT\Tester>git init
+Reinitialized existing Git repository in C:/Users/OJT/Tester/.git/
+
+C:\Users\OJT\Tester>git commit -m "Code"
+[master 91d6542] Code
+ 1 file changed, 17 insertions(+)
+ create mode 100644 Code.txt
+
+C:\Users\OJT\Tester>git push -u origin master
+Username for 'https://github.com': Kim Olivo
+Password for 'https://Kim Olivo@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/kimolivo/Tester.git/'
+
+C:\Users\OJT\Tester>git push -u origin master
+Username for 'https://github.com': kimolivo
+Password for 'https://kimolivo@github.com':
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 513 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/kimolivo/Tester.git
+   f21ff9e..91d6542  master -> master
+Branch master set up to track remote branch master from origin.
+
+C:\Users\OJT\Tester>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+C:\Users\OJT\Tester>
+
